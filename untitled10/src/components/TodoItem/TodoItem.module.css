@@ -1,0 +1,107 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/trash.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/pen.css');
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+.btnCont {
+    display: flex;
+    gap: 10px;
+}
+
+.btnCont button{
+    font-weight: 600;
+    height: 25px;
+    border: none;
+    background-color: inherit;
+    color: rgba(207, 207, 207, 1);
+}
+
+.btnCont button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.ul {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+
+.li {
+    margin: 0 148px 16px 147px;
+    border: none;
+    border-radius: 8px;
+    padding: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(244, 245, 244, 1);
+}
+
+.editInput {
+    border: 1px solid rgba(244, 245, 244, 1);
+    border-radius: 8px;
+    padding: 0.3em;
+}
+.icons{
+    stroke: #787878;
+}
+
+.icons:hover {
+    stroke: black;
+}
+
+.editBtn {
+    color: #FFFFFF;
+    background-color: rgba(68, 72, 218, 1);
+    border: 2px solid #4448DA;
+    border-radius: 8px;
+}
+
+.editBtn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgba(68, 72, 218, 1);
+    border: 2px solid #4448DA;
+}
+
+@media (max-width: 768px) {
+
+    .ul {
+        display: flex;
+        align-items: center;
+        margin: 0 38px 16px 38px;
+    }
+    .li {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 877px){
+    .li {
+        min-width: 550px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 479px ){
+    .ul {
+        min-width: 310px;
+        margin: 0 35px 16px 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .li {
+        margin: 0 24px 16px;
+    }
+    .editBtn {
+        height: 25px;
+        padding: 0.5em;
+    }
+}

@@ -1,0 +1,111 @@
+.container {
+    padding: 144px 148px 0 147px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.contInp {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.input {
+    min-width: 25px;
+    border: 1px solid rgba(244, 245, 244, 1);
+    border-radius: 8px;
+    width: 100%;
+    padding: 1em;
+}
+
+.contInp button {
+    color: #FFFFFF;
+    background-color: rgba(68, 72, 218, 1);
+    border: 2px solid #4448DA;
+    border-radius: 8px;
+    width: 154px;
+    padding: 1em;
+    height: 46px;
+}
+
+.contInp button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgba(68, 72, 218, 1);
+    border: 2px solid #4448DA;
+}
+.contBtn{
+    display: flex;
+    gap: 1em;
+}
+.contBtn button {
+    background-color: inherit;
+    border: 1px solid rgba(244, 245, 244, 1);
+    border-radius: 8px;
+    text-align: center;
+    height: 46px;
+    padding: 0 2em;
+}
+
+.contBtn button:hover{
+    background-color: rgba(244, 245, 254, 1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 144px 24px 0 24px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contInp {
+        display: flex;
+        align-items: flex-end;
+        margin: 24px 0 32px 0;
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .contInp button {
+        display: block;
+    width: 154px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .container{
+        padding-top: 144px;
+    }
+    .btnText {
+        display: none;
+    }
+    .contBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contBtn button {
+        min-width: 84px;
+        text-align: center;
+        padding: 0 1em;
+    }
+    .notific1Btn {
+        min-width: 140px;
+    }
+    .contInp button {
+        width: 50px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 479px ) {
+    .input {
+        min-width: 212px;
+    }
+}
